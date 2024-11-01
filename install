@@ -1,0 +1,39 @@
+#!/usr/bin/env bash
+DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+set -e
+
+cd "${DIR}"
+
+########################
+### Setup via Dotbot ###
+########################
+
+# CONFIG="install.conf.yaml"
+# DOTBOT_DIR="dotbot"
+# DOTBOT_BIN="bin/dotbot"
+# git submodule update --init --recursive "${DOTBOT_DIR}"
+# "${DIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${DIR}" -c "${CONFIG}" "${@}"
+
+####################
+### Manual Setup ###
+####################
+
+printf "Setting up symlinks...\n"
+ln -si "${DIR}/.vimrc" "${HOME}/.vimrc"
+ln -si "${DIR}/gitconfig" "${HOME}/.gitconfig"
+ln -si "${DIR}/gitignore" "${HOME}/.gitignore"
+# git config --global core.excludesfile "${DIR}/.gitignore_global"
+printf "Symlinks created.\n"
+
+# Ask for / install starship
+echo "Do you want to install starship? (y/n)"
+read -r response
+if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
+    curl -fsSL https://starship.rs/install.sh | bash
+    # Add starship to shell config
+    echo 'eval "$(starship init bash)"' >> "${HOME}/.bashrc"
+    # echo 'eval (starship init fish)' >> "${HOME}/.config/fish/config.fish"
+    ln -s "${DIR}/starship.toml" "${HOME}/.config/starship.toml"
+fi
+
+printf "Setup complete.\n"

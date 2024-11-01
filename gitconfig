@@ -1,0 +1,33 @@
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+	branchclean = "!f() { git branch --merged | grep -v "^\\*" | grep -v "^\\+" | xargs -r git branch -d; }; f"
+[color]
+	ui = auto
+	branch = auto
+	diff = auto
+	interactive = auto
+[color "status"]
+	added = green
+	changed = yellow
+	untracked = red
+[column]
+	branch = auto
+[core]
+        excludesfile = ~/.gitignore
+[fetch]
+	prune = true
+	all = true
+[init]
+        defaultBranch = main
+[log]
+	follow = true
+[rebase]
+	autosquash = true
+[user]
+        name = glass-ships
+        email = glass.ships@outlook.com
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
