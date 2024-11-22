@@ -31,7 +31,7 @@ read -r response
 if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
     curl -fsSL https://starship.rs/install.sh | bash
     # Add starship to shell config
-    echo 'eval "$(starship init bash)"' >> "${HOME}/.bashrc"
+    echo 'eval "$(starship init bash)"' >>"${HOME}/.bashrc"
     # echo 'eval (starship init fish)' >> "${HOME}/.config/fish/config.fish"
     ln -s "${DIR}/starship.toml" "${HOME}/.config/starship.toml"
 fi
