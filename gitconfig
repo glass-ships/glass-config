@@ -13,7 +13,7 @@
 [column]
 	branch = auto
 [core]
-	autocrlf = true
+	autocrlf = false
 	excludesfile = ~/.gitignore
 [fetch]
 	prune = true

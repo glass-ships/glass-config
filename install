@@ -26,8 +26,7 @@ ln -si "${DIR}/gitignore" "${HOME}/.gitignore"
 printf "Symlinks created.\n"
 
 # Ask for / install starship
-echo "Do you want to install starship? (y/n)"
-read -r response
+read -p "Do you want to install starship? (y/n) " -r response
 if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
     curl -fsSL https://starship.rs/install.sh | bash
     # Add starship to shell config
