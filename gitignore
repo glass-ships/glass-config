@@ -9,3 +9,4 @@ test_output/
 
 # FOR ORNL ONLY
 bun.lockb
+bun.lock
