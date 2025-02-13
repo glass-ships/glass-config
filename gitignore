@@ -10,4 +10,4 @@ test_output/
 # FOR ORNL ONLY
 bun.lockb
 bun.lock
-_version
+_version.py
