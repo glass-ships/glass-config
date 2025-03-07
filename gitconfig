@@ -20,8 +20,8 @@
 	old = red bold
 	new = green bold
 	whitespace = red reverse
-[column]
-	branch = auto
+# [column]
+# 	branch = auto
 [core]
 	autocrlf = false
 	editor = nvim
