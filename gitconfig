@@ -26,6 +26,7 @@
 	autocrlf = false
 	editor = nvim
 	excludesfile = ~/.gitignore
+	filemode = false
 	# whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
 [diff]
 	tool = vimdiff
