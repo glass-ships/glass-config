@@ -4,9 +4,10 @@
 .condaconfig
 env.fish
 glass-test/
-glass-test.*
+glass-test*.*
 
 .ipynb_checkpoints
+.pixi/
 test-output/
 test_output/
 
