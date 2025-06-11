@@ -33,7 +33,7 @@ set mouse=a
 
 " Theme and coloration
 set t_Co=256
-colorscheme elflord
+colorscheme evening
 
 set number
 set showmode
