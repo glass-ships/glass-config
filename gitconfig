@@ -70,7 +70,7 @@
 [user]
 	name = Glass
 	username = glass-ships
-	email = glass.ships@outlook.com
+	email = glass.ships@protonmail.com
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
