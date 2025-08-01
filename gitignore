@@ -7,7 +7,7 @@ glass-test/
 glass-test*.*
 
 .ipynb_checkpoints
-.pixi/
+.pixi
 test-output/
 test_output/
 
