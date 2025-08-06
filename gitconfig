@@ -52,6 +52,7 @@
 [fetch]
 	prune = true
 	pruneTags = true
+	tags = True
 	all = true
 [filter "lfs"]
 	clean = git-lfs clean -- %f
