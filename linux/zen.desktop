@@ -1,0 +1,15 @@
+[Desktop Entry]
+Comment=
+Exec=/home/glass/dev/bin/zen-browser/zen %u
+Icon=/home/glass/dev/bin/zen-browser/browser/chrome/icons/default/default64.png
+Name=Zen
+NoDisplay=false
+Path=
+PrefersNonDefaultGPU=false
+StartupNotify=true
+StartupWMClass=zen
+Terminal=false
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=

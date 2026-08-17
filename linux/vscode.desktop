@@ -1,0 +1,15 @@
+[Desktop Entry]
+Comment=
+Exec=/home/glass/dev/bin/vscode/code
+Icon=/home/glass/dev/bin/vscode/resources/app/resources/linux/code.png
+Name=VS Code
+NoDisplay=false
+Path=
+PrefersNonDefaultGPU=false
+StartupNotify=true
+StartupWMClass=code
+Terminal=false
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=
